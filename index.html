@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AllMotion - Tienda Deportiva</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="logo.png" />
+</head>
+<body>
+
+  <div class="contenedor">
+    <div class="contenido">
+
+      <!-- Imagen del logo como título -->
+      <img src="./assets/Logo-blanco.png" alt="AllMotion" class="logo-principal" />
+
+      <!-- Eslogan debajo del logo -->
+      <p class="slogan">¡Mueve tu pasión, vive el deporte con AllMotion! 🏃‍♂️🔥</p>
+
+      <!-- Botones de acción -->
+      <div class="botones">
+        <a href="#productos" class="btn">🏋️‍♂️ Ver Productos</a>
+        <a href="https://wa.me/573159714345?text=Hola%2C%20quiero%20más%20información%20sobre%20los%20productos%20de%20AllMotion" class="btn">📦 Pedir por WhatsApp</a>
+        <a href="#contacto" class="btn">📞 Contáctanos</a>
+      </div>
+
+      <!-- Redes sociales con imágenes -->
+      <div class="redes">
+        <p>Síguenos en nuestras redes:</p>
+        <div class="iconos-redes">
+          <a href="https://www.instagram.com/allmotion_store/" target="_blank" title="Instagram">
+            <img src="./assets/icons8-instagram-100 (2).png" data-hover="./assets/icons8-instagram-100 (1).png" class="icono-red" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61576611717990" target="_blank" title="Facebook">
+            <img src="./assets/icons8-facebook-100 (2).png" data-hover="./assets/icons8-facebook-100 (1).png" class="icono-red" alt="Facebook">
+          </a>
+          <a href="https://www.tiktok.com/@allmotion_store" target="_blank" title="TikTok">
+            <img src="./assets/icons8-tik-tok-100.png" data-hover="./assets/icons8-tik-tok-100 (1).png" class="icono-red" alt="TikTok">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript para cambiar imagen al pasar el cursor -->
+  <script>
+    document.querySelectorAll('.icono-red').forEach(img => {
+      const original = img.src;
+      const hover = img.getAttribute('data-hover');
+
+      img.addEventListener('mouseover', () => {
+        img.src = hover;
+      });
+
+      img.addEventListener('mouseout', () => {
+        img.src = original;
+      });
+    });
+  </script>
+
+</body>
+</html>
